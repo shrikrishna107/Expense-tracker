@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-from-left {
+    animation: from-left 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 250ms;
+}
+
+@keyframes from-left {
+    0% {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-moj{
+    animation: moj 3s ease-in-out 1ms infinite linear alternate;
+}
+@keyframes moj {
+    0%{
+        font-size: small;
+    }
+    100%{
+        font-size: x-large;
+    }
+}
